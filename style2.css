@@ -1,0 +1,202 @@
+body {
+  overflow-y: hidden;
+}
+.Aboutleft {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Aboutright {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+.Aboutright img {
+ 
+ height: 600px;
+}
+.abouthero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(71, 73, 75);
+}
+.Aboutright img {
+  position: absolute;
+  z-index: 2;
+}
+
+.imgResizeing {
+  position: absolute;
+  height: 400px;
+  filter: blur(6px);
+  z-index: 1;
+  animation: aboutAnimation2 7s alternate infinite ease-in-out;
+  width: 400px;
+  border-radius: 46% 54% 36% 64% / 73% 18% 82% 27%;
+  background-color: rgb(232, 140, 20);
+}
+
+.imgResizeing2 {
+  position: absolute;
+  animation: aboutAnimation 9s alternate infinite ease-in-out,
+    aboutAnimation2 9s alternate infinite ease-in-out;
+  height: 400px;
+  z-index: 1;
+  top: 20%;
+  left: 30%;
+  width: 400px;
+  filter: blur(6px);
+  border-radius: 46% 54% 60% 40% / 27% 18% 82% 73%;
+  background-color: rgb(232, 140, 20);
+}
+
+@keyframes aboutAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50%,
+  100% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes aboutAnimation2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50%,
+  100% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+.Aboutleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.containmalpani p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.containmalpani {
+  color: white;
+}
+.containmalpani h1 {
+  color: rgb(255, 145, 0);
+  margin-bottom: 70px;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0;
+
+  text-align: center;
+}
+
+.line5 {
+  height: 0.07px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.data2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  font-size: medium;
+}
+.data2 p {
+  border: 1px solid;
+  padding: 5px 10px;
+  margin-top: 60px;
+  transition: all 0.3s;
+}
+.data2 p:hover {
+  background-color: black;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .imgResizeing {
+    position: absolute;
+    height: 200px;
+    filter: blur(10px);
+    z-index: 1;
+    animation: aboutAnimation2 7s alternate infinite ease-in-out;
+    width: 200px;
+    border-radius: 46% 54% 36% 64% / 73% 18% 82% 27%;
+    background-color: rgb(232, 140, 20);
+  }
+
+  .imgResizeing2 {
+    position: absolute;
+    animation: aboutAnimation 9s alternate infinite ease-in-out,
+      aboutAnimation2 9s alternate infinite ease-in-out;
+    height: 200px;
+    z-index: 1;
+    top: 40%;
+    left: 0;
+    width: 200px;
+    filter: blur(10px);
+    border-radius: 46% 54% 60% 40% / 27% 18% 82% 73%;
+    background-color: rgb(232, 140, 20);
+  }
+  .Aboutright img {
+    height: 300px;
+    width: 200px;
+  }
+  .containmalpani h1 {
+    color: rgb(255, 145, 0);
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+
+    text-align: center;
+  }
+  .containmalpani p {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+  .hero {
+    overflow-x: hidden;
+  }
+  .data2 p {
+    margin-top: 40px;
+    font-size: 6px;
+    padding: 4px 7px;
+  }
+  .rightSide {
+    visibility: visible;
+  }
+  .hideKR {
+    display: none;
+  }
+  .home {
+    position: absolute;
+    margin-left: 40vw;
+  }
+  header {
+    overflow-x: hidden;
+  }
+}
