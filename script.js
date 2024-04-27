@@ -62,7 +62,7 @@ const data = [
       "Dynamic, versatile scripting language powering interactive web experiences seamlessly",
   },
   {
-    img: "https://scontent-del1-1.xx.fbcdn.net/v/t39.30808-6/299463877_560030875914611_8025210373789510385_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=x91C6h2IoK0AX-t7Glf&_nc_ht=scontent-del1-1.xx&oh=00_AfA9wAV82J3ROVMfvl4ezzOqX8pbpuHLin3t-N0oSUwn7A&oe=65CF5737",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQMAgy_XeSr2CmOITAysaZtDxsVUSTSYtSM2EKE5ivhg&s",
     learning: "Tailwind",
     about:
       "Utility-first CSS framework for building modern, responsive designs efficiently",
